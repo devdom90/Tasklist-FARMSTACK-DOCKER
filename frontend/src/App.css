@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*,
+html,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+background: #F1F2B5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+margin: 0;
+padding: 0;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+  background-image:url("./assets/rain-bg.gif") ;
+  border-radius: 10px;
+	height: 75px;
+	padding: 30px 25px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.nav-title{
+  margin-right: auto;
+  font-weight: 700;
+  font-size:xx-large;
+}
+
+.nav-subtitle{
+  font-weight: 600;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.task-wrapper {
+  margin: 0;
+  max-width: 800px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #00000060;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left #43434357, #00000081);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #43434380, #00000067);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.tasks--undone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFE53B;
+  background-image: linear-gradient(90deg, #FFE53B 0%, #FF2525 53%);
+  margin: 10px 20px;
+  padding: 10px 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+/*.tasks--done .tasks--undone > p:hover{
+  cursor: pointer;
+}*/
+
+.tasks--done {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #08AEEA;
+  background-image: linear-gradient(160deg, #08AEEA 34%, #2AF598 69%);
+  margin: 10px 20px;
+  padding: 10px 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.tasks--done > p:hover{
+  cursor: pointer;
+}
+
+.tasks--undone > p:hover{
+  cursor: pointer;
+}
+
+.buttom-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 10px 12px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 8px;
+  width: 80%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.task-wrapper {
+  min-width: 300px;
+  width: 50%;
+  border: 0;
+  margin: 10px auto 70px auto;
+}
+
+.task-wrapper > input {
+  display: block;
+  width: 100%;
+  padding: 10px 2px;
+}
+
+.task-wrapper > h1 {
+  text-align: center;
+}
+
+.task-wrapper > .btn {
+  width: 100%;
+}
+
+.login-input-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.login-input-wrapper > input{
+  padding: 10px;
+  margin: 5px 10px;
+  border-radius: 8px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-items: center;
+}
+
+.input-wrapper input {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 8px;
+}
+
+.input-wrapper .btn {
+  padding: 11px;
+  margin: 10px 10px;
+}
+
+.create-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.regloginbtns {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 8px;
+  margin: 5px 10px;
+}
+
+.regloginbtns .btn {
+  margin: 10px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  background: rgb(207, 55, 55);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.success-msg {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  background: rgb(31, 175, 31);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
